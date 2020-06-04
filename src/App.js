@@ -88,13 +88,16 @@ function App() {
   };
 
   return (
-    <Panel
-      handleChange={handleChange}
-      onBoldClick={onBoldClick}
-      onItalicsClick={onItalicsClick}
-      outputRef={outputRef}
-      inputRef={inputRef}
-    />
+    <div className="appDiv">
+      <h2 className="mainHeading">Markdown Editor</h2>
+      <Panel
+        handleChange={handleChange}
+        onBoldClick={onBoldClick}
+        onItalicsClick={onItalicsClick}
+        outputRef={outputRef}
+        inputRef={inputRef}
+      />
+    </div>
   );
 }
 
